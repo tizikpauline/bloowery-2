@@ -82,7 +82,7 @@
                                                     <state key="selected" image="Checkbox Active"/>
                                                     <state key="highlighted" image="Checkbox Active"/>
                                                     <connections>
-                                                        <action selector="taskCheckboxW:" destination="oMy-Rh-awS" eventType="touchUpInside" id="hMq-a9-8n2"/>
+                                                        <action selector="taskCheckboxW:" destination="oMy-Rh-awS" eventType="touchUpInside" id="fIu-dq-TYf"/>
                                                     </connections>
                                                 </button>
                                             </subviews>
@@ -104,12 +104,16 @@
                                         </collectionViewCellContentView>
                                         <size key="customSize" width="374" height="65"/>
                                         <connections>
-                                            <outlet property="plantImgW" destination="EJY-A1-55e" id="i1r-JY-3bd"/>
-                                            <outlet property="taskInfoW" destination="hZm-41-HpL" id="WSn-nD-7pS"/>
-                                            <outlet property="taskNameW" destination="UYf-VY-q6P" id="8jM-TU-m4m"/>
+                                            <outlet property="plantImgW" destination="EJY-A1-55e" id="Q0I-b3-rEh"/>
+                                            <outlet property="taskInfoW" destination="hZm-41-HpL" id="pFj-pS-XhE"/>
+                                            <outlet property="taskNameW" destination="UYf-VY-q6P" id="ssh-vQ-DhF"/>
                                         </connections>
                                     </collectionViewCell>
                                 </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="s8V-ei-dHq" id="Ytq-bm-OxJ"/>
+                                    <outlet property="delegate" destination="s8V-ei-dHq" id="dcX-vw-KjN"/>
+                                </connections>
                             </collectionView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zdl-Tx-gSe">
                                 <rect key="frame" x="214" y="99" width="135" height="35"/>
@@ -183,8 +187,8 @@
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Ficus" translatesAutoresizingMaskIntoConstraints="NO" id="tNA-7U-c9l">
                                                     <rect key="frame" x="0.0" y="0.0" width="65" height="65"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="height" constant="65" id="YUx-9i-kRj"/>
-                                                        <constraint firstAttribute="width" constant="65" id="aos-9Q-mhD"/>
+                                                        <constraint firstAttribute="height" constant="65" id="BQN-51-Gyt"/>
+                                                        <constraint firstAttribute="width" constant="65" id="Nvr-UC-Yo6"/>
                                                     </constraints>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Удобрить Степушу" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WaG-ci-Rrd">
@@ -216,21 +220,22 @@
                                             <color key="backgroundColor" red="0.95686274510000002" green="0.96862745100000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                             <constraints>
                                                 <constraint firstAttribute="trailing" secondItem="QuF-Dr-TcN" secondAttribute="trailing" constant="6" id="2Iz-WG-W3l"/>
-                                                <constraint firstItem="tNA-7U-c9l" firstAttribute="top" secondItem="EzD-cy-xyL" secondAttribute="top" id="UOO-UQ-gaK"/>
+                                                <constraint firstItem="tNA-7U-c9l" firstAttribute="leading" secondItem="EzD-cy-xyL" secondAttribute="leading" id="Hmv-jO-oBt"/>
+                                                <constraint firstAttribute="bottom" secondItem="tNA-7U-c9l" secondAttribute="bottom" id="OVc-cu-39x"/>
                                                 <constraint firstItem="WaG-ci-Rrd" firstAttribute="top" secondItem="EzD-cy-xyL" secondAttribute="top" constant="11" id="hmH-66-brd"/>
                                                 <constraint firstAttribute="bottom" secondItem="QuF-Dr-TcN" secondAttribute="bottom" constant="22" id="ihe-bv-Hgi"/>
                                                 <constraint firstItem="QuF-Dr-TcN" firstAttribute="leading" secondItem="WaG-ci-Rrd" secondAttribute="trailing" constant="125" id="kP6-XB-Hzj"/>
+                                                <constraint firstItem="WaG-ci-Rrd" firstAttribute="leading" secondItem="tNA-7U-c9l" secondAttribute="trailing" constant="14" id="q4h-Zi-LsM"/>
+                                                <constraint firstItem="tNA-7U-c9l" firstAttribute="top" secondItem="EzD-cy-xyL" secondAttribute="top" id="spE-lc-Uno"/>
                                                 <constraint firstItem="QuF-Dr-TcN" firstAttribute="top" secondItem="EzD-cy-xyL" secondAttribute="top" constant="22" id="ucv-cH-z0N"/>
-                                                <constraint firstItem="tNA-7U-c9l" firstAttribute="leading" secondItem="EzD-cy-xyL" secondAttribute="leading" id="vu1-tN-bUi"/>
                                                 <constraint firstAttribute="bottom" secondItem="YcU-6I-WcH" secondAttribute="bottom" constant="11" id="xaL-qR-Tja"/>
                                                 <constraint firstItem="YcU-6I-WcH" firstAttribute="top" secondItem="WaG-ci-Rrd" secondAttribute="bottom" constant="6" id="xdi-Mp-mqf"/>
-                                                <constraint firstAttribute="bottom" secondItem="tNA-7U-c9l" secondAttribute="bottom" id="yY5-Wx-p6k"/>
                                                 <constraint firstItem="YcU-6I-WcH" firstAttribute="leading" secondItem="tNA-7U-c9l" secondAttribute="trailing" constant="14" id="ykG-Xc-cgY"/>
                                             </constraints>
                                         </collectionViewCellContentView>
                                         <size key="customSize" width="374" height="65"/>
                                         <connections>
-                                            <outlet property="plantmgF" destination="tNA-7U-c9l" id="Gno-aO-XXs"/>
+                                            <outlet property="plantImgF" destination="tNA-7U-c9l" id="OnY-LQ-PJJ"/>
                                             <outlet property="taskInfoF" destination="YcU-6I-WcH" id="Ict-xe-KqI"/>
                                             <outlet property="taskNameF" destination="WaG-ci-Rrd" id="1sw-yf-DO3"/>
                                         </connections>

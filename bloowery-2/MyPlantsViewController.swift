@@ -15,7 +15,6 @@ struct Item {
 
 class MyPlantsViewController: UIViewController {
     
-    
     @IBOutlet weak var myPlantsLabel: UILabel!
     
     @IBOutlet weak var searchBar: UISearchBar!

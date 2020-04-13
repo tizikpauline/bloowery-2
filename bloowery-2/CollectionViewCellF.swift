@@ -13,8 +13,7 @@ class CollectionViewCellF: UICollectionViewCell {
     
     @IBOutlet weak var taskInfoF: UILabel!
     
-    @IBOutlet weak var plantmgF: UIImageView!
-    
+    @IBOutlet weak var plantImgF: UIImageView!
     
     @IBAction func taskCheckboxF(_ sender: UIButton) {
     }

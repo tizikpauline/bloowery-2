@@ -9,6 +9,7 @@
 import UIKit
 
 class CollectionViewCellW: UICollectionViewCell {
+
     
     @IBOutlet weak var plantImgW: UIImageView!
     
@@ -18,5 +19,6 @@ class CollectionViewCellW: UICollectionViewCell {
     
     @IBAction func taskCheckboxW(_ sender: UIButton) {
     }
+    
     
 }
