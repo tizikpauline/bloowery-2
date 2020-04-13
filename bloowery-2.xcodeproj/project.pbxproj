@@ -7,15 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4376B646244429D800D9D824 /* CollectionViewCellW.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4376B645244429D800D9D824 /* CollectionViewCellW.swift */; };
 		438E45FB24441142003E9C47 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 438E45FA24441142003E9C47 /* AppDelegate.swift */; };
 		438E45FD24441142003E9C47 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 438E45FC24441142003E9C47 /* SceneDelegate.swift */; };
 		438E45FF24441142003E9C47 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 438E45FE24441142003E9C47 /* ViewController.swift */; };
 		438E460224441142003E9C47 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 438E460024441142003E9C47 /* Main.storyboard */; };
 		438E460424441142003E9C47 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 438E460324441142003E9C47 /* Assets.xcassets */; };
 		438E460724441142003E9C47 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 438E460524441142003E9C47 /* LaunchScreen.storyboard */; };
+		438E461124441241003E9C47 /* CollectionViewCellF.swift in Sources */ = {isa = PBXBuildFile; fileRef = 438E461024441241003E9C47 /* CollectionViewCellF.swift */; };
+		438E461324441281003E9C47 /* MyPlantsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 438E461224441281003E9C47 /* MyPlantsViewController.swift */; };
+		438E4616244412D9003E9C47 /* PlantCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 438E4614244412D9003E9C47 /* PlantCollectionViewCell.swift */; };
+		438E4617244412D9003E9C47 /* PlantCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 438E4615244412D9003E9C47 /* PlantCollectionViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4376B645244429D800D9D824 /* CollectionViewCellW.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCellW.swift; sourceTree = "<group>"; };
 		438E45F724441142003E9C47 /* bloowery-2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "bloowery-2.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		438E45FA24441142003E9C47 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		438E45FC24441142003E9C47 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +30,10 @@
 		438E460324441142003E9C47 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		438E460624441142003E9C47 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		438E460824441142003E9C47 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		438E461024441241003E9C47 /* CollectionViewCellF.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCellF.swift; sourceTree = "<group>"; };
+		438E461224441281003E9C47 /* MyPlantsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPlantsViewController.swift; sourceTree = "<group>"; };
+		438E4614244412D9003E9C47 /* PlantCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantCollectionViewCell.swift; sourceTree = "<group>"; };
+		438E4615244412D9003E9C47 /* PlantCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PlantCollectionViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,8 +67,13 @@
 			isa = PBXGroup;
 			children = (
 				438E45FA24441142003E9C47 /* AppDelegate.swift */,
+				438E461024441241003E9C47 /* CollectionViewCellF.swift */,
+				4376B645244429D800D9D824 /* CollectionViewCellW.swift */,
 				438E45FC24441142003E9C47 /* SceneDelegate.swift */,
 				438E45FE24441142003E9C47 /* ViewController.swift */,
+				438E461224441281003E9C47 /* MyPlantsViewController.swift */,
+				438E4614244412D9003E9C47 /* PlantCollectionViewCell.swift */,
+				438E4615244412D9003E9C47 /* PlantCollectionViewCell.xib */,
 				438E460024441142003E9C47 /* Main.storyboard */,
 				438E460324441142003E9C47 /* Assets.xcassets */,
 				438E460524441142003E9C47 /* LaunchScreen.storyboard */,
@@ -127,6 +142,7 @@
 			files = (
 				438E460724441142003E9C47 /* LaunchScreen.storyboard in Resources */,
 				438E460424441142003E9C47 /* Assets.xcassets in Resources */,
+				438E4617244412D9003E9C47 /* PlantCollectionViewCell.xib in Resources */,
 				438E460224441142003E9C47 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -138,8 +154,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				438E4616244412D9003E9C47 /* PlantCollectionViewCell.swift in Sources */,
+				438E461124441241003E9C47 /* CollectionViewCellF.swift in Sources */,
+				4376B646244429D800D9D824 /* CollectionViewCellW.swift in Sources */,
 				438E45FF24441142003E9C47 /* ViewController.swift in Sources */,
 				438E45FB24441142003E9C47 /* AppDelegate.swift in Sources */,
+				438E461324441281003E9C47 /* MyPlantsViewController.swift in Sources */,
 				438E45FD24441142003E9C47 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
