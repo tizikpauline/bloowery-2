@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="IQX-Hc-bkw">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="IQX-Hc-bkw">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -46,74 +46,17 @@
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cell" id="oMy-Rh-awS" customClass="CollectionViewCellW" customModule="bloowery_2">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="TaskCollectionViewCell" id="oMy-Rh-awS">
                                         <rect key="frame" x="0.0" y="0.0" width="374" height="65"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="zoQ-Mu-6vk">
                                             <rect key="frame" x="0.0" y="0.0" width="374" height="65"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            <subviews>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Ficus" translatesAutoresizingMaskIntoConstraints="NO" id="EJY-A1-55e">
-                                                    <rect key="frame" x="0.0" y="0.0" width="65" height="65"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="height" constant="65" id="lpd-bP-cdu"/>
-                                                        <constraint firstAttribute="width" constant="65" id="nid-Rs-DS9"/>
-                                                    </constraints>
-                                                </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Удобрить Степушу" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UYf-VY-q6P">
-                                                    <rect key="frame" x="79" y="11" width="143" height="20"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Внекорневое" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hZm-41-HpL">
-                                                    <rect key="frame" x="79" y="37" width="90" height="17"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="urW-RH-wws">
-                                                    <rect key="frame" x="347" y="22" width="21" height="21"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="width" constant="21" id="Qb0-Ws-Zrd"/>
-                                                        <constraint firstAttribute="height" constant="21" id="wzj-HO-VSb"/>
-                                                    </constraints>
-                                                    <state key="normal" image="Checkbox Inactive"/>
-                                                    <state key="selected" image="Checkbox Active"/>
-                                                    <state key="highlighted" image="Checkbox Active"/>
-                                                    <connections>
-                                                        <action selector="taskCheckboxW:" destination="oMy-Rh-awS" eventType="touchUpInside" id="fIu-dq-TYf"/>
-                                                    </connections>
-                                                </button>
-                                            </subviews>
                                             <color key="backgroundColor" red="0.95686274510000002" green="0.96862745100000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                            <constraints>
-                                                <constraint firstAttribute="bottom" secondItem="hZm-41-HpL" secondAttribute="bottom" constant="11" id="6vf-Ou-fNK"/>
-                                                <constraint firstItem="EJY-A1-55e" firstAttribute="leading" secondItem="zoQ-Mu-6vk" secondAttribute="leading" id="9Wk-gA-xfU"/>
-                                                <constraint firstItem="urW-RH-wws" firstAttribute="leading" secondItem="UYf-VY-q6P" secondAttribute="trailing" constant="125" id="AuC-bn-UUl"/>
-                                                <constraint firstItem="hZm-41-HpL" firstAttribute="top" secondItem="UYf-VY-q6P" secondAttribute="bottom" constant="6" id="CyP-gC-BJK"/>
-                                                <constraint firstItem="UYf-VY-q6P" firstAttribute="leading" secondItem="EJY-A1-55e" secondAttribute="trailing" constant="14" id="QGU-8n-cYY"/>
-                                                <constraint firstItem="EJY-A1-55e" firstAttribute="top" secondItem="zoQ-Mu-6vk" secondAttribute="top" id="R8w-Uf-1LV"/>
-                                                <constraint firstAttribute="trailing" secondItem="urW-RH-wws" secondAttribute="trailing" constant="6" id="UaH-d5-Vte"/>
-                                                <constraint firstAttribute="bottom" secondItem="urW-RH-wws" secondAttribute="bottom" constant="22" id="WFG-KW-XhJ"/>
-                                                <constraint firstItem="urW-RH-wws" firstAttribute="top" secondItem="zoQ-Mu-6vk" secondAttribute="top" constant="22" id="Z0C-b7-z4u"/>
-                                                <constraint firstItem="hZm-41-HpL" firstAttribute="leading" secondItem="EJY-A1-55e" secondAttribute="trailing" constant="14" id="aUk-q3-5YF"/>
-                                                <constraint firstAttribute="bottom" secondItem="EJY-A1-55e" secondAttribute="bottom" id="ocQ-pP-KpG"/>
-                                                <constraint firstItem="UYf-VY-q6P" firstAttribute="top" secondItem="zoQ-Mu-6vk" secondAttribute="top" constant="11" id="uTt-L2-z2t"/>
-                                            </constraints>
                                         </collectionViewCellContentView>
                                         <size key="customSize" width="374" height="65"/>
-                                        <connections>
-                                            <outlet property="plantImgW" destination="EJY-A1-55e" id="Q0I-b3-rEh"/>
-                                            <outlet property="taskInfoW" destination="hZm-41-HpL" id="pFj-pS-XhE"/>
-                                            <outlet property="taskNameW" destination="UYf-VY-q6P" id="ssh-vQ-DhF"/>
-                                        </connections>
                                     </collectionViewCell>
                                 </cells>
-                                <connections>
-                                    <outlet property="dataSource" destination="s8V-ei-dHq" id="Ytq-bm-OxJ"/>
-                                    <outlet property="delegate" destination="s8V-ei-dHq" id="dcX-vw-KjN"/>
-                                </connections>
                             </collectionView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zdl-Tx-gSe">
                                 <rect key="frame" x="214" y="99" width="135" height="35"/>
@@ -177,74 +120,17 @@
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cell2" id="YHK-cu-eI5" customClass="CollectionViewCellF" customModule="bloowery_2">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="TaskCollectionViewCell2" id="YHK-cu-eI5">
                                         <rect key="frame" x="0.0" y="0.0" width="374" height="65"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="EzD-cy-xyL">
                                             <rect key="frame" x="0.0" y="0.0" width="374" height="65"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            <subviews>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Ficus" translatesAutoresizingMaskIntoConstraints="NO" id="tNA-7U-c9l">
-                                                    <rect key="frame" x="0.0" y="0.0" width="65" height="65"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="height" constant="65" id="BQN-51-Gyt"/>
-                                                        <constraint firstAttribute="width" constant="65" id="Nvr-UC-Yo6"/>
-                                                    </constraints>
-                                                </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Удобрить Степушу" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WaG-ci-Rrd">
-                                                    <rect key="frame" x="79" y="11" width="143" height="20"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Внекорневое" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YcU-6I-WcH">
-                                                    <rect key="frame" x="79" y="37" width="90" height="17"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QuF-Dr-TcN">
-                                                    <rect key="frame" x="347" y="22" width="21" height="21"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="width" constant="21" id="iay-wo-SxJ"/>
-                                                        <constraint firstAttribute="height" constant="21" id="xQB-Lr-2Ah"/>
-                                                    </constraints>
-                                                    <state key="normal" image="Checkbox Inactive"/>
-                                                    <state key="selected" image="Checkbox Active"/>
-                                                    <state key="highlighted" image="Checkbox Active"/>
-                                                    <connections>
-                                                        <action selector="taskCheckboxF:" destination="YHK-cu-eI5" eventType="touchUpInside" id="gL9-xF-IEQ"/>
-                                                    </connections>
-                                                </button>
-                                            </subviews>
                                             <color key="backgroundColor" red="0.95686274510000002" green="0.96862745100000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                            <constraints>
-                                                <constraint firstAttribute="trailing" secondItem="QuF-Dr-TcN" secondAttribute="trailing" constant="6" id="2Iz-WG-W3l"/>
-                                                <constraint firstItem="tNA-7U-c9l" firstAttribute="leading" secondItem="EzD-cy-xyL" secondAttribute="leading" id="Hmv-jO-oBt"/>
-                                                <constraint firstAttribute="bottom" secondItem="tNA-7U-c9l" secondAttribute="bottom" id="OVc-cu-39x"/>
-                                                <constraint firstItem="WaG-ci-Rrd" firstAttribute="top" secondItem="EzD-cy-xyL" secondAttribute="top" constant="11" id="hmH-66-brd"/>
-                                                <constraint firstAttribute="bottom" secondItem="QuF-Dr-TcN" secondAttribute="bottom" constant="22" id="ihe-bv-Hgi"/>
-                                                <constraint firstItem="QuF-Dr-TcN" firstAttribute="leading" secondItem="WaG-ci-Rrd" secondAttribute="trailing" constant="125" id="kP6-XB-Hzj"/>
-                                                <constraint firstItem="WaG-ci-Rrd" firstAttribute="leading" secondItem="tNA-7U-c9l" secondAttribute="trailing" constant="14" id="q4h-Zi-LsM"/>
-                                                <constraint firstItem="tNA-7U-c9l" firstAttribute="top" secondItem="EzD-cy-xyL" secondAttribute="top" id="spE-lc-Uno"/>
-                                                <constraint firstItem="QuF-Dr-TcN" firstAttribute="top" secondItem="EzD-cy-xyL" secondAttribute="top" constant="22" id="ucv-cH-z0N"/>
-                                                <constraint firstAttribute="bottom" secondItem="YcU-6I-WcH" secondAttribute="bottom" constant="11" id="xaL-qR-Tja"/>
-                                                <constraint firstItem="YcU-6I-WcH" firstAttribute="top" secondItem="WaG-ci-Rrd" secondAttribute="bottom" constant="6" id="xdi-Mp-mqf"/>
-                                                <constraint firstItem="YcU-6I-WcH" firstAttribute="leading" secondItem="tNA-7U-c9l" secondAttribute="trailing" constant="14" id="ykG-Xc-cgY"/>
-                                            </constraints>
                                         </collectionViewCellContentView>
                                         <size key="customSize" width="374" height="65"/>
-                                        <connections>
-                                            <outlet property="plantImgF" destination="tNA-7U-c9l" id="OnY-LQ-PJJ"/>
-                                            <outlet property="taskInfoF" destination="YcU-6I-WcH" id="Ict-xe-KqI"/>
-                                            <outlet property="taskNameF" destination="WaG-ci-Rrd" id="1sw-yf-DO3"/>
-                                        </connections>
                                     </collectionViewCell>
                                 </cells>
-                                <connections>
-                                    <outlet property="dataSource" destination="s8V-ei-dHq" id="Tek-ZK-BGz"/>
-                                    <outlet property="delegate" destination="s8V-ei-dHq" id="ST6-y1-XgO"/>
-                                </connections>
                             </collectionView>
                             <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="iZv-2R-xMs">
                                 <rect key="frame" x="0.0" y="818" width="414" height="44"/>
@@ -430,11 +316,8 @@
     <resources>
         <image name="Action button inactive" width="130" height="42.5"/>
         <image name="Add Plant" width="33" height="33"/>
-        <image name="Checkbox Active" width="20.5" height="20.5"/>
-        <image name="Checkbox Inactive" width="20.5" height="20.5"/>
         <image name="Diagnostics-Inactive" width="22.5" height="21.5"/>
         <image name="Down" width="12.5" height="7"/>
-        <image name="Ficus" width="159" height="159"/>
         <image name="Plants-Inactive" width="21.5" height="22.5"/>
         <image name="Profile-Inactive" width="22.5" height="22.5"/>
         <image name="Round background" width="30" height="30.5"/>

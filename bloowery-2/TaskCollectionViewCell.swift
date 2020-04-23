@@ -9,15 +9,14 @@
 import UIKit
 
 class TaskCollectionViewCell: UICollectionViewCell {
-    
-    @IBOutlet weak var plantImage: UIImageView!
-    
-    @IBOutlet weak var taskName: UILabel!
+
+    @IBOutlet weak var checkboxButton: UIButton!
     
     @IBOutlet weak var taskInfo: UILabel!
     
-    @IBAction func checkboxButton(_ sender: UIButton) {
-    }
+    @IBOutlet weak var taskName: UILabel!
+    
+    @IBOutlet weak var plantImage: UIImageView!
     
     override func awakeFromNib() {
         super.awakeFromNib()
